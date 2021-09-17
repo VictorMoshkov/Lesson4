@@ -66,7 +66,7 @@ public class Main {
 
     }
 
-    
+
             public static void movePC () {
                 Random random = new Random();
 
@@ -91,7 +91,8 @@ public class Main {
             for (String elem : arr)
                 if (elem.equals("."))
                     countFreeSpace += 1;
-
+// Не получается добавить System.out.println("Победил игрок");System.out.println("Победил компьютер");
+// Постоянно выделяется красным строка,всю голову сломал.
         for (int i = 0; i < 3; i++) {
             if (field[i][0] == ("X") && field[i][1] == ("X") && field[i][2] == ("X") || (field[0][i] == ("X")
                     && field[1][i] == ("X") && field[2][i] == ("X")))
